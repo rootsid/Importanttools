@@ -1,0 +1,9 @@
+grep -a '[a-z0-9]\{32\}' /dev/sdb
+
+
+or if you know a piece of a file
+
+grep -a 'piece' /dev/sdb
+
+grep -a -B2 -A5 'piece' /dev/sdb
+

@@ -1,0 +1,24 @@
+check if dd exits
+/bin/dd
+whihc dcfldd
+
+it's better forensic version of dd
+
+we can do it remotely as wel
+
+ssh pi@10.10.10.48 "sudo dcfldd if=/dev/sdb | gzip -l -" | dcfldd of=pi.dd.gz
+
+later we can unzip that 
+gunzip -d pi.dd.gz
+
+then use binwalk
+
+binwalk pi.dd
+
+binwalk -Me pi.dd
+
+if not then 
+
+testdisk pi.dd
+
+go to adavanced->partition->list

