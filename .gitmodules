@@ -1,3 +1,6 @@
 [submodule "hash-identifier"]
 	path = hash-identifier
 	url = https://github.com/blackploit/hash-identifier
+[submodule "SecLists"]
+	path = SecLists
+	url = https://github.com/danielmiessler/SecLists
